@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+<header>    
+    <!--Navigation Section-->
+<nav id="site-navigation" aria-label="Primary">
+    
+    <!--Banner/Logo-->
+    <img src="images/bakery-logo_c.png"
+    alt="North Star Bakery Bread Logo"
+    width="300"
+    height="200">
+    
+    <!--Navigation Bar-->
+    <ul style="background-color: white;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+
+    <h2 class="light-logo">Pre-order Request Form</h2>
+    <form action="/contact" method="post">
+        <fieldset>
+            <legend>Contact Info</legend></center>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>        
+            <br>
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        </fieldset>
+             <br>
+        <fieldset>
+            <legend>Order Details</legend></center>
+        <label for="pickup">Pickup Date</label>
+            <input type="date" id="pickup" name="pickup" min="2026-09-12" max="2027-01-01" required>
+            <br>
+        <label for="request">Request Type</label>
+        <br>
+            <label for="pre-order">PreOrder</label>
+            <input type="checkbox" id="pre-order" name="pre-order" value="pre-order">
+            <label for="general-question">General Question</label>
+            <input type="checkbox" id="general-question" name="general-question" value="general question">
+            <br>
+        <label for="item-details">Item Details</label>
+            <input type="text" id="item-details" name="item-details">
+            <br>
+        <label for="allergy">Allergy Notes</label>
+            <input type="text" id="allergy" name="allergy">
+            <br>
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</main>
+
+<!--Footer Section-->
+<footer>    
+    <ul>
+        <li>1001 Center Street, Amityville New York</li>
+        <li>Monday - Friday: 8AM to 8PM</li>
+        <li>Saturday & Sunday: 10AM to 6PM</li>
+    </ul>    
+</footer>
+</body>
+
+</html>
