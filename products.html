@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Star Bakery</title>
-    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>North Star Bakery</title> 
 </head>
 
 <body>
 <header>    
     <!--Navigation Section-->
 <nav id="site-navigation" aria-label="Primary">
+
+<div style="display: flex; gap: 1rem; align-items: center;">    
+    <button id="darkmode">dark</button>
+    <button id="lightmode">light</button>
+</div>
     
     <!--Banner/Logo-->
     <img src="images/bakery-logo_c.png"
@@ -49,7 +55,7 @@
                     <h2 class="dark-logo">
                         Italian Loafs, French Baguettes, Rustic Sourdough
                     </h2>
-                        <p>
+                        <p class="light-logo">
                             Freshly made daily with all natural ingredients
                         <p>
                         <hr width="50%">
@@ -59,7 +65,7 @@
                     <h2 class="dark-logo">
                         Strudel, Apple Turnover, Apple-Cinnamon Crumble
                     </h2>
-                        <p>
+                        <p class="light-logo">
                             Artisanally crafted, using whole-fruit fillings and "made from scratch" icing
                         </p>
                         <hr width="50%">
@@ -69,7 +75,7 @@
                     <h2 class="dark-logo">
                         Red Velvet, Chocolate Dobash, Carrot Cake, Funfetti
                     </h2>
-                        <p>
+                        <p class="light-logo">
                             Available as sheet-cake or round-cake in 1-4 layers
                         </p>
                  

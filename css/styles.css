@@ -28,6 +28,11 @@ body {
     margin: 0 auto;
 }
 
+body.dark-mode {
+    background-color: black;
+    text-color: white;
+}
+
 main {
     margin-left: auto;
     margin-right: auto;
