@@ -30,7 +30,7 @@ body {
 
 body.dark-mode {
     background-color: black;
-    text-color: white;
+    color: white;
 }
 
 main {

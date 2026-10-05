@@ -37,30 +37,32 @@
 <main>
 
     <h2 class="light-logo">Pre-order Request Form</h2>
-    <form action="/contact" method="post">
+    <form action="/contact" id="contact-form" method="post">
         <fieldset>
-            <legend>Contact Info</legend></center>
+            <legend>Contact Info</legend>
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>        
+        <input type="text" id="name" name="name" required>
+        <span id="invalidName" class="errorMessage"></span>        
             <br>
         <label for="email">Email</label>
-        <input type="email" name="email">
+        <input type="email" id="email" name="email">
+        <span id="invalidEmail" class="errorMessage"></span>
         </fieldset>
              <br>
         <fieldset>
-            <legend>Order Details</legend></center>
+            <legend>Order Details</legend>
         <label for="pickup">Pickup Date</label>
             <input type="date" id="pickup" name="pickup" min="2026-09-12" max="2027-01-01" required>
             <br>
         <label for="request">Request Type</label>
-        <br>
-            <label for="pre-order">PreOrder</label>
+             <br>
+        <label for="pre-order">PreOrder</label>
             <input type="checkbox" id="pre-order" name="pre-order" value="pre-order">
             <label for="general-question">General Question</label>
             <input type="checkbox" id="general-question" name="general-question" value="general question">
             <br>
-        <label for="item-details">Item Details</label>
-            <input type="text" id="item-details" name="item-details">
+        <label for="item-details"></label>
+            <textarea type="text" id="item-details" rows:"4" cols="30" name="item-details"></textarea>
             <br>
         <label for="allergy">Allergy Notes</label>
             <input type="text" id="allergy" name="allergy">
